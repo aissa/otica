@@ -12,18 +12,34 @@ ActiveAdmin.register_page "Dashboard" do
         end
       end
     end
-
-    section "Clientes cadastrados recentemente" do
-      table_for Cliente.order("nome").limit(5) do
-        column :nome do |cliente|
-          link_to cliente.nome, [:admin, cliente]
+    columns do
+      column do
+        panel "Info" do
+          para "#{I18n.t('hello')} #{current_admin_user.email}!"
         end
       end
-        strong {link_to "Ver todos os clientes", admin_clientes_path}
+      column do
+        panel "Info" do
+          para "#{I18n.t('hello')} #{current_admin_user.email}!"
+        end
       end
+      column do
+        panel "Alinao" do
+          section "Clientes cadastrados recentemente" do
+            table_for Cliente.order("nome").limit(5) do
+              column :nome do |cliente|
+                link_to cliente.nome, [:admin, cliente]
+              end
+            end
+              strong {link_to "Ver todos os clientes", admin_clientes_path}
+          end
+        end
+      end
+    end
+
     #columns do
 
- 
+
          #     li link_to(domain.nome, admin_clientes_path(domain))
           #  end
           #end
