@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  num_version,: MyString
+  nam_event_description,: MyString
+  nam_ip,: MyString
+  nam_event,: MyString
+  nam_ticket,: MyString
+  venda_id: MyString
+
+two:
+  num_version,: MyString
+  nam_event_description,: MyString
+  nam_ip,: MyString
+  nam_event,: MyString
+  nam_ticket,: MyString
+  venda_id: MyString

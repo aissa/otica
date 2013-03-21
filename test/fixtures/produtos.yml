@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  data_entrega: 2013-03-18
+  descricao: MyString
+  preco: 9.99
+  quantidade: 1
+  status: MyString
+  validade: 2013-03-18
+
+two:
+  data_entrega: 2013-03-18
+  descricao: MyString
+  preco: 9.99
+  quantidade: 1
+  status: MyString
+  validade: 2013-03-18
